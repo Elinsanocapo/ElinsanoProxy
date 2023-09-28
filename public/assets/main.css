@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 @import url('/assets/fonts/fa.css');
 
-
 * {
     box-sizing: border-box;
 }
@@ -9,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #2c2f33;
+    background: #000; /* Cambiado a fondo negro */
     color: #FFF;
     font-family: Roboto;
     font-weight: 400;
@@ -20,16 +19,16 @@ h1, h2 {
     font-weight: 400;
 }
 
-
 .wrapper {
     width: 100%;
-    padding: 50px;
     position: absolute;
     display: flex;
-    flex: 1;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    background: Transparent;
+    transform: translateY(-50%);
 }
 
 header {
@@ -40,17 +39,15 @@ header {
     margin: 5px 0px;
     width: 900px;
     padding: 0px 25px;
-    background: #23272a;
-    border: solid 1px rgb(255, 255, 255, .2);
+    background: Transparent;
+    border: solid 1px);
 }
-
 
 header #intro {
     font-size: 35px;
     height: 50px;
-    display: inline
+    color: red; /* Color brillante (amarillo) */
 }
-
 header #github, header #github:active, header #github:hover  {
     height: 50px;
     width: 205px;
@@ -65,13 +62,13 @@ header #github i {
 }
 
 .container {
-    width: 900px;
-    background: #23272a;
+    width: 868px;
+    background: transparent;
     padding: 25px;
-    margin: 5px 0px;
+    margin: 0px 0px;
     text-align: left;
     display: block;
-    border: solid 1px rgb(255, 255, 255, .2);
+    
 }
 
 .form input {
@@ -95,6 +92,146 @@ header #github i {
     font-family: "Roboto";
     font-size: 14px;
     background: none;
+    border: none;
+    outline: none;
+}
+
+
+.form {
+    display: inline-block;
+    max-width: 100%;
+    border: 2px solid #FFF;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    padding: 0px 10px;
+}
+
+
+.wrapper {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    background: Transparent;
+    transform: translateY(-50%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px;
+    width: 900px;
+    padding: 0px 25px;
+    background: url('ruta_de_tu_imagen.jpg') center center no-repeat; /* Añade la imagen como fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+}
+
+header img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Ajusta el tamaño de la imagen */
+}
+
+header p {
+    font-size: 16px; /* Tamaño de la descripción */
+}
+
+.wrapper {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    background: Transparent;
+    transform: translateY(-50%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px;
+    width: 900px;
+    padding: 0px 25px;
+    background: transparent; /* Cambiado a fondo transparente */
+}
+
+header img {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Ajusta el tamaño de la imagen */
+}
+
+header p {
+    font-size: 16px; /* Tamaño de la descripción */
+}
+
+header #github {
+    text-decoration: none; /* Elimina el subrayado */
+    color: red; /* Color brillante (amarillo) */
+}
+
+.search-button {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    color: #FFF;
+    padding: 0px 5px;
+    font-family: "Roboto";
+    font-size: 14px;
+    background: none;
+    border: solid 1px #FFF;
     border-radius: 2px;
-    border: solid 1px rgb(255, 255, 255, .2);
+}
+
+
+.fa-search:before {
+    content: "\f002";
+    font-family: FontAwesome;
+}
+container {
+    width: 868px;
+    background: transparent;
+    padding: 25px;
+    margin: 0px 0px;
+    text-align: left;
+    display: block;
+    
+}
+
+
+.wrapper {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    background: Transparent;
+    transform: translateY(-50%);
+}
+
+.container {
+    width: 868px;
+    background: transparent;
+    padding: 320px;
+    margin: 0 auto; /* Esto centrará el contenedor horizontalmente */
+    text-align: left;
+    display: block;
+}
+
+.form {
+    display: inline-block;
+    max-width: 100%;
+    border: 2px solid #FFF;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: left;
+    padding: 0px 10px;
 }
